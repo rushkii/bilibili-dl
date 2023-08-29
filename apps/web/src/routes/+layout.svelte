@@ -13,4 +13,6 @@
 </svelte:head>
 
 <Header/>
-<slot />
+<section class="my-0 mx-auto">
+  <slot />
+</section>
