@@ -13,10 +13,8 @@
   <div class="flex items-center justify-between">
     <a href="/" draggable="false">
       <img
-        src="/OpenBstation.svg" alt="Logo Apps"
-        width="160" height="68"
-        loading="lazy" decoding="async"
-        draggable="false"
+        src="/OpenBstation.svg" alt="Logo Apps" width="160"
+        loading="lazy" decoding="async" draggable="false"
       >
     </a>
     <div class="relative w-[30%] box-border grow-0">
