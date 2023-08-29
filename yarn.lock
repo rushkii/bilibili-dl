@@ -29,7 +29,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bilibili-dl/config@*, @bilibili-dl/config@workspace:packages/config":
+"@bilibili-dl/config@*, @bilibili-dl/config@workspace:*, @bilibili-dl/config@workspace:packages/config":
   version: 0.0.0-use.local
   resolution: "@bilibili-dl/config@workspace:packages/config"
   dependencies:
@@ -44,7 +44,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bilibili-dl/core@workspace:packages/core":
+"@bilibili-dl/core@workspace:*, @bilibili-dl/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@bilibili-dl/core@workspace:packages/core"
   dependencies:
@@ -68,7 +68,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bilibili-dl/util@*, @bilibili-dl/util@workspace:packages/util":
+"@bilibili-dl/util@*, @bilibili-dl/util@workspace:*, @bilibili-dl/util@workspace:packages/util":
   version: 0.0.0-use.local
   resolution: "@bilibili-dl/util@workspace:packages/util"
   dependencies:
@@ -84,6 +84,34 @@ __metadata:
     rimraf: ^3.0.2
     tsup: ^6.5.0
     typescript: ^4.7.4
+  languageName: unknown
+  linkType: soft
+
+"@bilibili-dl/web@workspace:apps/web":
+  version: 0.0.0-use.local
+  resolution: "@bilibili-dl/web@workspace:apps/web"
+  dependencies:
+    "@bilibili-dl/config": "workspace:*"
+    "@bilibili-dl/core": "workspace:*"
+    "@bilibili-dl/util": "workspace:*"
+    "@sveltejs/adapter-auto": ^2.0.0
+    "@sveltejs/kit": ^1.20.4
+    "@typescript-eslint/eslint-plugin": ^5.45.0
+    "@typescript-eslint/parser": ^5.45.0
+    autoprefixer: ^10.4.15
+    eslint: ^8.28.0
+    eslint-config-prettier: ^8.5.0
+    eslint-plugin-svelte: ^2.30.0
+    fastest-validator: ^1.17.0
+    postcss: ^8.4.28
+    prettier: ^2.8.0
+    prettier-plugin-svelte: ^2.10.1
+    svelte: ^4.0.5
+    svelte-check: ^3.4.3
+    tailwindcss: ^3.3.3
+    tslib: ^2.4.1
+    typescript: ^5.0.0
+    vite: ^4.4.2
   languageName: unknown
   linkType: soft
 
@@ -2165,6 +2193,13 @@ __metadata:
   version: 2.0.6
   resolution: "fast-levenshtein@npm:2.0.6"
   checksum: 92cfec0a8dfafd9c7a15fba8f2cc29cd0b62b85f056d99ce448bbcd9f708e18ab2764bda4dd5158364f4145a7c72788538994f0d1787b956ef0d1062b0f7c24c
+  languageName: node
+  linkType: hard
+
+"fastest-validator@npm:^1.17.0":
+  version: 1.17.0
+  resolution: "fastest-validator@npm:1.17.0"
+  checksum: 0a6240f6dc7b544b3aadf9367410ecd64590dbfe505e6a24c339df954dd216f3a714d64a224abeef531d0a40dc348efe6cdbf59372d28954ac450cc0b212e0ec
   languageName: node
   linkType: hard
 
@@ -4640,30 +4675,6 @@ __metadata:
   checksum: 4add282ffec4f27388aa75df2cd7db9a674d51bf9471907441ca23ff5ac70fc9540344dbf3a53af0aa53685f1d7b8c756da5f9749afe91aac66c82a25ade7821
   languageName: node
   linkType: hard
-
-"web@workspace:apps/web":
-  version: 0.0.0-use.local
-  resolution: "web@workspace:apps/web"
-  dependencies:
-    "@sveltejs/adapter-auto": ^2.0.0
-    "@sveltejs/kit": ^1.20.4
-    "@typescript-eslint/eslint-plugin": ^5.45.0
-    "@typescript-eslint/parser": ^5.45.0
-    autoprefixer: ^10.4.15
-    eslint: ^8.28.0
-    eslint-config-prettier: ^8.5.0
-    eslint-plugin-svelte: ^2.30.0
-    postcss: ^8.4.28
-    prettier: ^2.8.0
-    prettier-plugin-svelte: ^2.10.1
-    svelte: ^4.0.5
-    svelte-check: ^3.4.3
-    tailwindcss: ^3.3.3
-    tslib: ^2.4.1
-    typescript: ^5.0.0
-    vite: ^4.4.2
-  languageName: unknown
-  linkType: soft
 
 "webidl-conversions@npm:^4.0.2":
   version: 4.0.2
